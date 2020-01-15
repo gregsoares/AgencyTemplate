@@ -536,7 +536,7 @@ class App extends Component {
             <a href="/"><img src="img/blog/blog-image-3.jpg" className="img-responsive" alt="img" /></a>
             <div className="content-blog">
               <h4><a href="/">whats isthe difference between good and bat typography</a></h4>
-              <span>05, juin 2017</span>
+              <span>05, jun 2017</span>
               <a className="pull-right readmore" href="/">read more</a>
             </div>
           </div>
@@ -597,17 +597,16 @@ class App extends Component {
           <div className="info">
             <div>
               <i className="fa fa-map-marker"></i>
-              <p>A108 Adam Street<br />New York, NY 535022</p>
+              <p>Gainesville, Florida</p>
             </div>
-
             <div className="email">
               <i className="fa fa-envelope"></i>
-              <p>info@example.com</p>
+              <p>yourersolution@gmail.com</p>
             </div>
 
             <div>
               <i className="fa fa-phone"></i>
-              <p>+1 5589 55488 55s</p>
+              <p>123-456-7890</p>
             </div>
           </div>
 
@@ -670,7 +669,7 @@ class App extends Component {
         <div className="col-sm-6 col-md-3 col-lg-2">
           <div className="list-menu">
 
-            <h4>Abou Us</h4>
+            <h4>About Us</h4>
 
             <ul className="list-unstyled">
               <li><a href="/">About us</a></li>
@@ -685,7 +684,7 @@ class App extends Component {
         <div className="col-sm-6 col-md-3 col-lg-2">
           <div className="list-menu">
 
-            <h4>Abou Us</h4>
+            <h4>About Us</h4>
 
             <ul className="list-unstyled">
               <li><a href="/">About us</a></li>
