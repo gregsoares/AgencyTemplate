@@ -1,63 +1,33 @@
 import React, { Component } from 'react';
-import { Button } from 'reactstrap';
-import logo from './logo.svg';
-import './App.css';
+// import { Button } from 'reactstrap';
+// import logo from './logo.svg';
+import TopHeader from './Components/TopHeader/TopHeader';
+import TopHero from './Components/TopHero/TopHero';
 
 
 class App extends Component {
+
+
   render() {
+    const optBtn = {
+      btnLink: '/',
+      btnIcon: 'fa-apple',
+      btnText: 'Some Text'
+    };
     return (
         <div className="App">
-          <header id="header" class="header header-hide">
-            <div class="container">
 
-              <div id="logo" class="pull-left">
-                <h1><a href="#body" class="scrollto"><span>e</span>Startup</a></h1>
-                {/* Uncomment below if you prefer to use an image logo */}
-                {/* <a href="#body"><img src="img/logo.png" alt="" title="" /></a>*/}
-              </div>
+          <TopHeader />
 
-              <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                  <li class="menu-active"><a href="#hero">Home</a></li>
-                  <li><a href="#about-us">About</a></li>
-                  <li><a href="#features">Features</a></li>
-                  <li><a href="#screenshots">Screenshots</a></li>
-                  <li><a href="#team">Team</a></li>
-                  <li><a href="#pricing">Pricing</a></li>
-                  <li class="menu-has-children"><a href="">Drop Down</a>
-                    <ul>
-                      <li><a href="#">Drop Down 1</a></li>
-                      <li><a href="#">Drop Down 3</a></li>
-                      <li><a href="#">Drop Down 4</a></li>
-                      <li><a href="#">Drop Down 5</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#blog">Blog</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </nav>
-              {/*#nav-menu-container */}
-
-            </div>
-          </header>
-          {/*#header */}
-
-          {/*Hero Section*/}
-          <section id="hero" class="wow fadeIn">
-            <div class="hero-container">
-              <h1>Welcome to eStartups</h1>
-              <h2>Elegant Bootstrap Template for Startups, Apps &amp; more...</h2>
-              <img src="img/hero-img.png" alt="Hero Imgs" />
-              <a href="#get-started" class="btn-get-started scrollto">Get Started</a>
-              <div class="btns">
-                <a href="#"><i class="fa fa-apple fa-3x"></i> App Store</a>
-                <a href="#"><i class="fa fa-play fa-3x"></i> Google Play</a>
-                <a href="#"><i class="fa fa-windows fa-3x"></i> windows</a>
-              </div>
-            </div>
-          </section>
-          {/*#hero */}
+          <TopHero
+              title="Your ER Solution"
+              subtitle='Section Subtitle here'
+              imgPath='img/hero-img.png'
+              btnText='btnText'
+              otpBtn={ optBtn  }
+                // { btnTwo: googlePlayBtn },
+                // { btnThree: windowsBtn }
+          />
 
           {/*Get Started Section*/}
           <section id="get-started" class="padd-section text-center wow fadeInUp">
@@ -80,7 +50,7 @@ class App extends Component {
                     <img src="img/svg/cloud.svg" alt="img" class="img-fluid" />
                     <h4>introducing whatsapp</h4>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                    <a href="#">read more</a>
+                    <a href="/">read more</a>
 
                   </div>
                 </div>
@@ -91,7 +61,7 @@ class App extends Component {
                     <img src="img/svg/planet.svg" alt="img" class="img-fluid" />
                     <h4>user friendly interface</h4>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                    <a href="#">read more</a>
+                    <a href="/">read more</a>
 
                   </div>
                 </div>
@@ -102,7 +72,7 @@ class App extends Component {
                     <img src="img/svg/asteroid.svg" alt="img" class="img-fluid" />
                     <h4>build the app everyone love</h4>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                    <a href="#">read more</a>
+                    <a href="/">read more</a>
 
                   </div>
                 </div>
@@ -129,11 +99,11 @@ class App extends Component {
                     </p>
 
                     <ul class="list-unstyled">
-                      <li><i class="fa fa-angle-right"></i>Creative Design</li>
-                      <li><i class="fa fa-angle-right"></i>Retina Ready</li>
-                      <li><i class="fa fa-angle-right"></i>Easy to Use</li>
-                      <li><i class="fa fa-angle-right"></i>Unlimited Features</li>
-                      <li><i class="fa fa-angle-right"></i>Unlimited Features</li>
+                      <li><i class="fa fa-angle-right"/>Creative Design</li>
+                      <li><i class="fa fa-angle-right"/>Retina Ready</li>
+                      <li><i class="fa fa-angle-right"/>Easy to Use</li>
+                      <li><i class="fa fa-angle-right"/>Unlimited Features</li>
+                      <li><i class="fa fa-angle-right"/>Unlimited Features</li>
                     </ul>
 
                   </div>
@@ -260,7 +230,7 @@ class App extends Component {
               <div class="container-fluid container-full">
 
                 <div class="row">
-                  <a href="#" class="js-modal-btn play-btn" data-video-id="s22ViV7tBKE"></a>
+                  <a href="/" class="js-modal-btn play-btn" data-video-id="s22ViV7tBKE"> </a>
                 </div>
 
               </div>
@@ -287,9 +257,9 @@ class App extends Component {
                     <img src="img/team/1.jpg" class="img-responsive" alt="img" />
                     <div class="team-content">
                       <ul class="list-unstyled">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="/"><i class="fa fa-facebook"/></a></li>
+                        <li><a href="/"><i class="fa fa-twitter"/></a></li>
+                        <li><a href="/"><i class="fa fa-linkedin"/></a></li>
                       </ul>
                       <span>manager</span>
                       <h4>Kimberly Tran</h4>
@@ -302,9 +272,9 @@ class App extends Component {
                     <img src="img/team/2.jpg" class="img-responsive" alt="img" />
                     <div class="team-content">
                       <ul class="list-unstyled">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="/"><i class="fa fa-facebook"/></a></li>
+                        <li><a href="/"><i class="fa fa-twitter"/></a></li>
+                        <li><a href="/"><i class="fa fa-linkedin"/></a></li>
                       </ul>
                       <span>manager</span>
                       <h4>Kimberly Tran</h4>
@@ -317,9 +287,9 @@ class App extends Component {
                     <img src="img/team/3.jpg" class="img-responsive" alt="img" />
                     <div class="team-content">
                       <ul class="list-unstyled">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="/"><i class="fa fa-facebook"/></a></li>
+                        <li><a href="/"><i class="fa fa-twitter"/></a></li>
+                        <li><a href="/"><i class="fa fa-linkedin"/></a></li>
                       </ul>
                       <span>manager</span>
                       <h4>Kimberly Tran</h4>
@@ -332,9 +302,9 @@ class App extends Component {
                     <img src="img/team/4.jpg" class="img-responsive" alt="img" />
                     <div class="team-content">
                       <ul class="list-unstyled">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="/"><i class="fa fa-facebook"/></a></li>
+                        <li><a href="/"><i class="fa fa-twitter"/></a></li>
+                        <li><a href="/"><i class="fa fa-linkedin"/></a></li>
                       </ul>
                       <span>manager</span>
                       <h4>Kimberly Tran</h4>
@@ -398,9 +368,9 @@ class App extends Component {
                       <div class="btm-btm">
 
                         <ul class="list-unstyled carousel-indicators">
-                          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"/>
+                          <li data-target="#carousel-example-generic" data-slide-to="1"/>
+                          <li data-target="#carousel-example-generic" data-slide-to="2"/>
                         </ul>
 
                       </div>
@@ -441,7 +411,7 @@ class App extends Component {
                         <li>Palo Protection</li>
                       </ul>
                       <div class="table_btn">
-                        <a href="#" class="btn"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                        <a href="/" class="btn"><i class="fa fa-shopping-cart"/> Buy Now</a>
                       </div>
                     </div>
                   </div>
@@ -460,7 +430,7 @@ class App extends Component {
                         <li>Palo Protection</li>
                       </ul>
                       <div class="table_btn">
-                        <a href="#" class="btn"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                        <a href="/" class="btn"><i class="fa fa-shopping-cart"/> Buy Now</a>
                       </div>
                     </div>
                   </div>
@@ -479,7 +449,7 @@ class App extends Component {
                         <li>Palo Protection</li>
                       </ul>
                       <div class="table_btn">
-                        <a href="#" class="btn"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                        <a href="/" class="btn"><i class="fa fa-shopping-cart"/> Buy Now</a>
                       </div>
                     </div>
                   </div>
@@ -498,7 +468,7 @@ class App extends Component {
                         <li>Palo Protection</li>
                       </ul>
                       <div class="table_btn">
-                        <a href="#" class="btn"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                        <a href="/" class="btn"><i class="fa fa-shopping-cart"/> Buy Now</a>
                       </div>
                     </div>
                   </div>
@@ -524,33 +494,33 @@ class App extends Component {
 
                 <div class="col-md-6 col-lg-4">
                   <div class="block-blog text-left">
-                    <a href="#"><img src="img/blog/blog-image-1.jpg" alt="img" /></a>
+                    <a href="/"><img src="img/blog/blog-image-1.jpg" alt="img" /></a>
                     <div class="content-blog">
-                      <h4><a href="#">whats isthe difference between good and bat typography</a></h4>
+                      <h4><a href="/">whats isthe difference between good and bat typography</a></h4>
                       <span>05, juin 2017</span>
-                      <a class="pull-right readmore" href="#">read more</a>
+                      <a class="pull-right readmore" href="/">read more</a>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
                   <div class="block-blog text-left">
-                    <a href="#"><img src="img/blog/blog-image-2.jpg" class="img-responsive" alt="img" /></a>
+                    <a href="/"><img src="img/blog/blog-image-2.jpg" class="img-responsive" alt="img" /></a>
                     <div class="content-blog">
-                      <h4><a href="#">whats isthe difference between good and bat typography</a></h4>
+                      <h4><a href="/">whats isthe difference between good and bat typography</a></h4>
                       <span>05, juin 2017</span>
-                      <a class="pull-right readmore" href="#">read more</a>
+                      <a class="pull-right readmore" href="/">read more</a>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
                   <div class="block-blog text-left">
-                    <a href="#"><img src="img/blog/blog-image-3.jpg" class="img-responsive" alt="img" /></a>
+                    <a href="/"><img src="img/blog/blog-image-3.jpg" class="img-responsive" alt="img" /></a>
                     <div class="content-blog">
-                      <h4><a href="#">whats isthe difference between good and bat typography</a></h4>
+                      <h4><a href="/">whats isthe difference between good and bat typography</a></h4>
                       <span>05, juin 2017</span>
-                      <a class="pull-right readmore" href="#">read more</a>
+                      <a class="pull-right readmore" href="/">read more</a>
                     </div>
                   </div>
                 </div>
@@ -566,10 +536,10 @@ class App extends Component {
 
                 <div class="row justify-content-center">
                   <div class="col-md-9 col-lg-6">
-                    <form class="form-inline" method="POST" action="#">
+                    <form class="form-inline" method="POST" action="#" >
 
                       <input type="email" class="form-control " placeholder="Email Adress" name="email" />
-                      <button type="submit" class="btn btn-default"><i class="fa fa-location-arrow"></i>Subscribe</button>
+                      <button type="submit" class="btn btn-default"><i class="fa fa-location-arrow"/>Subscribe</button>
 
                     </form>
 
@@ -577,10 +547,10 @@ class App extends Component {
                 </div>
 
                 <ul class="list-unstyled">
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="/"><i class="fa fa-facebook"/></a></li>
+                  <li><a href="/"><i class="fa fa-twitter"/></a></li>
+                  <li><a href="/"><i class="fa fa-google-plus"/></a></li>
+                  <li><a href="/"><i class="fa fa-linkedin"/></a></li>
                 </ul>
 
 
@@ -605,27 +575,27 @@ class App extends Component {
 
                   <div class="info">
                     <div>
-                      <i class="fa fa-map-marker"></i>
+                      <i class="fa fa-map-marker"/>
                       <p>A108 Adam Street<br />New York, NY 535022</p>
                     </div>
 
                     <div class="email">
-                      <i class="fa fa-envelope"></i>
+                      <i class="fa fa-envelope"/>
                       <p>info@example.com</p>
                     </div>
 
                     <div>
-                      <i class="fa fa-phone"></i>
+                      <i class="fa fa-phone"/>
                       <p>+1 5589 55488 55s</p>
                     </div>
                   </div>
 
                   <div class="social-links">
-                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="/" class="twitter"><i class="fa fa-twitter"/></a>
+                    <a href="/" class="facebook"><i class="fa fa-facebook"/></a>
+                    <a href="/" class="instagram"><i class="fa fa-instagram"/></a>
+                    <a href="/" class="google-plus"><i class="fa fa-google-plus"/></a>
+                    <a href="/" class="linkedin"><i class="fa fa-linkedin"/></a>
                   </div>
 
                 </div>
@@ -633,23 +603,23 @@ class App extends Component {
                 <div class="col-lg-5 col-md-8">
                   <div class="form">
                     <div id="sendmessage">Your message has been sent. Thank you!</div>
-                    <div id="errormessage"></div>
-                    <form action="" method="post" role="form" class="contactForm">
+                    <div id="errormessage"/>
+                    <form action="" method="post"  class="contactForm">
                       <div class="form-group">
                         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                        <div class="validation"></div>
+                        <div class="validation"/>
                       </div>
                       <div class="form-group">
                         <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                        <div class="validation"></div>
+                        <div class="validation"/>
                       </div>
                       <div class="form-group">
                         <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                        <div class="validation"></div>
+                        <div class="validation"/>
                       </div>
                       <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                        <div class="validation"></div>
+                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"/>
+                        <div class="validation"/>
                       </div>
                       <div class="text-center"><button type="submit">Send Message</button></div>
                     </form>
@@ -670,7 +640,7 @@ class App extends Component {
                 <div class="col-md-12 col-lg-4">
                   <div class="footer-logo">
 
-                    <a class="navbar-brand" href="#">eStartup</a>
+                    <a class="navbar-brand" href="/">eStartup</a>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
 
                   </div>
@@ -682,10 +652,10 @@ class App extends Component {
                     <h4>Abou Us</h4>
 
                     <ul class="list-unstyled">
-                      <li><a href="#">About us</a></li>
-                      <li><a href="#">Features item</a></li>
-                      <li><a href="#">Live streaming</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="/">About us</a></li>
+                      <li><a href="/">Features item</a></li>
+                      <li><a href="/">Live streaming</a></li>
+                      <li><a href="/">Privacy Policy</a></li>
                     </ul>
 
                   </div>
@@ -697,10 +667,10 @@ class App extends Component {
                     <h4>Abou Us</h4>
 
                     <ul class="list-unstyled">
-                      <li><a href="#">About us</a></li>
-                      <li><a href="#">Features item</a></li>
-                      <li><a href="#">Live streaming</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="/">About us</a></li>
+                      <li><a href="/">Features item</a></li>
+                      <li><a href="/">Live streaming</a></li>
+                      <li><a href="/">Privacy Policy</a></li>
                     </ul>
 
                   </div>
@@ -712,10 +682,10 @@ class App extends Component {
                     <h4>Support</h4>
 
                     <ul class="list-unstyled">
-                      <li><a href="#">faq</a></li>
-                      <li><a href="#">Editor help</a></li>
-                      <li><a href="#">Contact us</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="/">faq</a></li>
+                      <li><a href="/">Editor help</a></li>
+                      <li><a href="/">Contact us</a></li>
+                      <li><a href="/">Privacy Policy</a></li>
                     </ul>
 
                   </div>
@@ -727,10 +697,10 @@ class App extends Component {
                     <h4>Abou Us</h4>
 
                     <ul class="list-unstyled">
-                      <li><a href="#">About us</a></li>
-                      <li><a href="#">Features item</a></li>
-                      <li><a href="#">Live streaming</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="/">About us</a></li>
+                      <li><a href="/">Features item</a></li>
+                      <li><a href="/">Live streaming</a></li>
+                      <li><a href="/">Privacy Policy</a></li>
                     </ul>
 
                   </div>
@@ -753,7 +723,7 @@ class App extends Component {
 
 
 
-          <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+          <a href="/" class="back-to-top"><i class="fa fa-chevron-up"/></a>
 
         </div>
     );
