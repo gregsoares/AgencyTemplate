@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Button } from 'reactstrap';
 // import logo from './logo.svg';
 import TopHeader from './Components/TopHeader/TopHeader';
 import TopHero from './Components/TopHero/TopHero';
@@ -239,7 +238,7 @@ class App extends Component {
       <div className="container-fluid container-full">
 
         <div className="row">
-          <a href="/" className="js-modal-btn play-btn" data-video-id="s22ViV7tBKE"></a>
+          <a href="/" className="js-modal-btn play-btn" data-video-id="s22ViV7tBKE"> </a>
         </div>
 
       </div>
@@ -624,7 +623,7 @@ class App extends Component {
           <div className="form">
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
-            <form action="" method="post" role="form" className="contactForm">
+            <form action="" method="post" className="contactForm">
               <div className="form-group">
                 <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div className="validation"></div>

@@ -1,6 +1,6 @@
 {
-  "name": "MERN_StarterTemplate",
-  "version": "1.0.0",
+  "name": "AgencyTemplate",
+  "version": "1.1.0",
   "description": "",
   "main": "./bin/www.js",
   "scripts": {
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MERN_StarterTemplate/MERN_StarterTemplate.com.git"
+    "url": "git+https://github.com/AgencyTemplate/AgencyTemplate.com.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MERN_StarterTemplate/MERN_StarterTemplate.com/issues"
+    "url": "https://github.com/AgencyTemplate/AgencyTemplate.com/issues"
   },
-  "homepage": "https://github.com/MERN_StarterTemplate/MERN_StarterTemplate.com#readme",
+  "homepage": "https://github.com/AgencyTemplate/AgencyTemplate.com#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "concurrently": "^4.1.2",
