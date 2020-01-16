@@ -4,6 +4,7 @@ const Footer = props => {
 
   return (
     <React.Fragment>
+
       {/* <!--========================== */}
       {/* Footer */}
       {/* ============================--> */}
@@ -23,7 +24,7 @@ const Footer = props => {
             <div className="col-sm-6 col-md-3 col-lg-2">
               <div className="list-menu">
 
-                <h4>Abou Us</h4>
+                <h4>About Us</h4>
 
                 <ul className="list-unstyled">
                   <li><a href="/">About us</a></li>
@@ -38,7 +39,7 @@ const Footer = props => {
             <div className="col-sm-6 col-md-3 col-lg-2">
               <div className="list-menu">
 
-                <h4>Abou Us</h4>
+                <h4>About Us</h4>
 
                 <ul className="list-unstyled">
                   <li><a href="/">About us</a></li>
@@ -68,7 +69,7 @@ const Footer = props => {
             <div className="col-sm-6 col-md-3 col-lg-2">
               <div className="list-menu">
 
-                <h4>About Us</h4>
+                <h4>Abou Us</h4>
 
                 <ul className="list-unstyled">
                   <li><a href="/">About us</a></li>
@@ -91,7 +92,6 @@ const Footer = props => {
         </div>
 
       </footer>
-
     </React.Fragment>
   )
 }
