@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import AboutUs from "./Components/AboutUs/AboutUs";
+import TextColumn from "./Components/TextColumn/TextColumn";
 import Blog from './Components/Blog/Blog';
 import Contact from './Components/Contact/Contact';
 import Features from './Components/Features/Features';
@@ -50,7 +51,7 @@ class App extends Component {
       <React.Fragment>
         <TopHeader />
 
-        <TopHero
+        {/* <TopHero
           title="Your ER Solution"
           subtitle='Section Subtitle here'
           imgPath='img/hero-img.png'
@@ -58,11 +59,12 @@ class App extends Component {
           iconOne={icons.iconOne}
           iconTwo={icons.iconTwo}
           iconThree={icons.iconThree}
-        />
-        <Features />
+        /> */}
+        <TextColumn />
+        {/* <Features /> */}
         <Testimonials content={testimonials.testimonial}/>
         <AboutUs />
-        <Team />
+        {/* <Team /> */}
         {/* <Video /> */}
         <Blog />
         <GetStarted />

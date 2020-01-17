@@ -96,8 +96,41 @@
   .about-content {
     padding-top: 60px;
     h2 {
-      color: #252525;
+      color: #1a1919;
       font-family: "roboto";
+      font-size: 39px;
+      font-weight: 100;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+
+    span {
+      font-weight: 700;
+      padding-right: 10px;
+      text-transform: uppercase;
+    }
+
+    ul li {
+      line-height: 36px;
+    }
+
+    ul li .fa {
+      padding-right: 20px;
+    }
+  }
+
+}
+
+/* TextColumn Section
+--------------------------------*/
+
+#text-column {
+  .column-content {
+    padding-top: 60px;
+    color: #f5f4f4;
+    h2 {
+      font-family: 'cursive';
       font-size: 39px;
       font-weight: 100;
       letter-spacing: 2px;

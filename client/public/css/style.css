@@ -656,6 +656,30 @@ body.mobile-nav-active #mobile-nav-toggle i {
   padding-right: 20px;
 }
 
+/* TextColumn Section
+------------------------------- */
+#text-column div {
+  margin: 1.2em 0 1.2em 0;
+  background-color: #333;
+}
+
+ #text-column ul li {
+  color: #9acd32;
+  font-size: 1.2em;
+  letter-spacing: .2em;
+  line-height: 2;
+ }
+
+#text-column p{
+  color: #9acd32;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  line-height: 2;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
 /* Features Section
 --------------------------------*/
 #features {
