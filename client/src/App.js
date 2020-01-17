@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
+import AboutUs from "./Components/AboutUs/AboutUs";
+import Blog from './Components/Blog/Blog';
+import Contact from './Components/Contact/Contact';
+import Features from './Components/Features/Features';
+import Footer from './Components/Footer/Footer';
+import GetStarted from './Components/GetStarted/GetStarted';
+import Newsletter from './Components/Newsletter/Newsletter';
+import PriceTable from './Components/PriceTable/PriceTable';
+import ScreenShots from './Components/ScreenShots/ScreenShots';
+import Team from './Components/Team/Team';
+import Testimonials from './Components/Testimonials/Testimonials';
 import TopHeader from './Components/TopHeader/TopHeader';
 import TopHero from './Components/TopHero/TopHero';
-import Testimonials from './Components/Testimonials/Testimonials';
-import AboutUs from "./Components/AboutUs/AboutUs";
-import Footer from './Components/Footer/Footer';
+import Video from './Components/Video/Video';
 
 class App extends Component {
 
@@ -37,15 +46,18 @@ class App extends Component {
           iconTwo={icons.iconTwo}
           iconThree={icons.iconThree}
         />
-        <AboutUs />
-
+        <Features />
         <Testimonials />
-
-        {/* TODO: Turn all sections below into components */}
-
-
+        <AboutUs />
+        <Team />
+        {/* <Video /> */}
+        <Blog />
+        <GetStarted />
+        <PriceTable />
+        {/* <ScreenShots /> */}
+        <Newsletter />
+        <Contact />
         <Footer />
-
 
         <a href="/" className="back-to-top"><i className="fa fa-chevron-up"></i></a>
 
