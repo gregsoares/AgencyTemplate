@@ -30,7 +30,20 @@ class App extends Component {
       iconThree: {
         text: 'Icon Three Text'
       },
-
+    }
+    const testimonials = {
+      testimonial: {
+        title: 'T1',
+        text: 'Such nice things to say',
+        authorName: 'Greg Soares',
+        authorPosition: 'Boss'
+      },
+      // testimonial: {
+      //   title: 'T2',
+      //   text: 'Such great things to say',
+      //   authorName: 'Greg Soares 2',
+      //   authorPosition: 'Bossy'
+      // }
     }
 
     return (
@@ -47,7 +60,7 @@ class App extends Component {
           iconThree={icons.iconThree}
         />
         <Features />
-        <Testimonials />
+        <Testimonials content={testimonials.testimonial}/>
         <AboutUs />
         <Team />
         {/* <Video /> */}
