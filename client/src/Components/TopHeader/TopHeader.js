@@ -6,7 +6,7 @@ const TopHeader = props => {
       <div className="container">
 
         <div id="logo" className="pull-left">
-          <h1><a href="#body" className="scrollto">Your<span>ER</span>Solution</a></h1>
+          <h1><a href="#body" className="scrollto">Your<span>C</span>ompany</a></h1>
           {/* <!-- Uncomment below if you prefer to use an image logo --> */}
           {/* <!-- <a href="/body"><img src="img/logo.png" alt="" title="" /></a>--> */}
         </div>

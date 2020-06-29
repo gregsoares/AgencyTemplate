@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import AboutUs from "./Components/AboutUs/AboutUs";
-import TextColumn from "./Components/TextColumn/TextColumn";
 import Blog from './Components/Blog/Blog';
 import Contact from './Components/Contact/Contact';
 import Features from './Components/Features/Features';
@@ -38,38 +37,31 @@ class App extends Component {
         text: 'Such nice things to say',
         authorName: 'Greg Soares',
         authorPosition: 'Boss'
-      },
-      // testimonial: {
-      //   title: 'T2',
-      //   text: 'Such great things to say',
-      //   authorName: 'Greg Soares 2',
-      //   authorPosition: 'Bossy'
-      // }
+      }
     }
 
     return (
       <React.Fragment>
         <TopHeader />
 
-        {/* <TopHero
-          title="Your ER Solution"
+        <TopHero
+          title="Company Intro Section"
           subtitle='Section Subtitle here'
           imgPath='img/hero-img.png'
           btnText='Explore'
           iconOne={icons.iconOne}
           iconTwo={icons.iconTwo}
           iconThree={icons.iconThree}
-        /> */}
-        <TextColumn />
-        {/* <Features /> */}
+        />
+        <Features />
         <Testimonials content={testimonials.testimonial}/>
         <AboutUs />
-        {/* <Team /> */}
-        {/* <Video /> */}
+        <Team />
+        <Video />
         <Blog />
         <GetStarted />
         <PriceTable />
-        {/* <ScreenShots /> */}
+        <ScreenShots />
         <Newsletter />
         <Contact />
         <Footer />
