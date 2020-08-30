@@ -9,7 +9,7 @@ import Newsletter from "./Components/Newsletter/Newsletter";
 import PriceTable from "./Components/PriceTable/PriceTable";
 import ScreenShots from "./Components/ScreenShots/ScreenShots";
 import Team from "./Components/Team/Team";
-import Testimonials from "./Components/Testimonials/Testimonials";
+// import Testimonials from "./Components/Testimonials/Testimonials";
 import TopHeader from "./Components/TopHeader/TopHeader";
 import TopHero from "./Components/TopHero/TopHero";
 import Video from "./Components/Video/Video";
@@ -28,32 +28,32 @@ class App extends Component {
       },
     };
 
-    const testimonials = [
-      {
-        title: "Works as expected",
-        text:
-          " Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
-        authorName: "Greg Soares",
-        authorPosition: "User",
-        key: 0,
-      },
-      {
-        title: "Testimonial Two",
-        text:
-          "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
-        authorName: "Greg Soares",
-        authorPosition: "Dev guy",
-        key: 1,
-      },
-      {
-        title: "T1",
-        text:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
-        authorName: "Thoman Henderson",
-        authorPosition: "Manager",
-        key: 2,
-      },
-    ];
+    // const testimonials = [
+    //   {
+    //     title: "Works as expected",
+    //     text:
+    //       " Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+    //     authorName: "Greg Soares",
+    //     authorPosition: "User",
+    //     key: 0,
+    //   },
+    //   {
+    //     title: "Testimonial Two",
+    //     text:
+    //       "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+    //     authorName: "Greg Soares",
+    //     authorPosition: "Dev guy",
+    //     key: 1,
+    //   },
+    //   {
+    //     title: "T1",
+    //     text:
+    //       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+    //     authorName: "Thoman Henderson",
+    //     authorPosition: "Manager",
+    //     key: 2,
+    //   },
+    // ];
 
     return (
       <React.Fragment>
@@ -69,7 +69,7 @@ class App extends Component {
           iconThree={icons.iconThree}
         />
         <Features />
-        <Testimonials content={testimonials} />
+        {/* <Testimonials content={testimonials} /> */}
         <AboutUs />
         <Team />
         <Video />
